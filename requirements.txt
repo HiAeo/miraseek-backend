@@ -16,11 +16,11 @@ sniffio==1.3.0
 certifi==2024.2.2
 idna==3.6
 
-# Supabase 及依赖（修正版本）
+# Supabase 及依赖
 supabase==2.1.0
 postgrest==0.13.0
 realtime==1.0.6
-gotrue==2.4.0
+gotrue==2.4.1
 storage3==0.7.0
 supafunc==0.5.0
 
