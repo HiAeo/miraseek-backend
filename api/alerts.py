@@ -77,7 +77,7 @@ def get_mock_alerts():
             "type": "rank_drop",
             "level": "warning",
             "title": "排名下降预警",
-            "message": "在"国产工业机器人品牌排名"提示词中，您的品牌排名从第2位下降至第3位",
+            "message": "在「国产工业机器人品牌排名」提示词中，您的品牌排名从第2位下降至第3位",
             "triggered_at": "2026-03-26 10:30",
             "status": "unread"
         },
@@ -86,7 +86,7 @@ def get_mock_alerts():
             "type": "negative_sentiment",
             "level": "danger",
             "title": "负面情感预警",
-            "message": "DeepSeek在回答中出现关于"售后服务响应慢"的负面评价",
+            "message": "DeepSeek在回答中出现关于「售后服务响应慢」的负面评价",
             "triggered_at": "2026-03-26 09:15",
             "status": "unread"
         },
