@@ -5,7 +5,7 @@ FastAPI + Supabase
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from core.database import init_db
-from api import register_routes
+from api import brands_router, tasks_router, results_router, reports_router, alerts_router
 
 app = FastAPI(
     title="MiraSeek API",
@@ -25,7 +25,11 @@ app.add_middleware(
 )
 
 # 注册所有路由
-register_routes(app)
+app.include_router(brands_router, prefix="/api/v1/brands", tags=["品牌管理"])
+app.include_router(tasks_router, prefix="/api/v1/tasks", tags=["监控任务"])
+app.include_router(results_router, prefix="/api/v1/results", tags=["监控结果"])
+app.include_router(reports_router, prefix="/api/v1/reports", tags=["报告中心"])
+app.include_router(alerts_router, prefix="/api/v1/alerts", tags=["预警中心"])
 
 
 @app.on_event("startup")
