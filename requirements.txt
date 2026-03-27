@@ -1,39 +1,11 @@
 fastapi==0.109.2
-uvicorn==0.27.1
-starlette==0.36.3
-pydantic==2.6.1
-pydantic-core==2.16.2
-pydantic-settings==2.1.0
+uvicorn[standard]==0.27.1
 python-dotenv==1.0.1
+pydantic==2.6.1
+pydantic-settings==2.1.0
 python-multipart==0.0.9
-
-# HTTP 客户端
-httpx==0.25.2
-httpcore==0.18.0
-h11==0.14.0
-anyio==4.2.0
-sniffio==1.3.0
-certifi==2024.2.2
-idna==3.6
-
-# Supabase 及依赖
 supabase==2.1.0
-postgrest==0.13.0
-realtime==1.0.6
-gotrue==2.4.1
-storage3==0.7.0
-supafunc==0.5.0
-
-# 认证
-python-jose==3.3.0
-passlib==1.7.4
-bcrypt==4.1.2
-
-# 解析
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
 beautifulsoup4==4.12.3
 lxml==5.1.0
-soupsieve==2.5
-
-# 类型检查
-typing-extensions==4.9.0
-annotated-types==0.6.0
