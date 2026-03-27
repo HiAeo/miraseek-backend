@@ -104,7 +104,7 @@ def get_mock_alerts():
             "type": "keyword_alert",
             "level": "warning",
             "title": "关键词触发",
-            "message": "关键词"MiraSeek 故障"在豆包回答中被提及",
+            "message": "关键词「MiraSeek 故障」在豆包回答中被提及",
             "triggered_at": "2026-03-25 11:20",
             "status": "read"
         }
